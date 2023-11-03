@@ -1,4 +1,11 @@
 import os
+import argparse
+
+def IOParser(**kwargs):
+    parser = argparse.ArgumentParser(**kwargs)
+    parser.add_argument('-i', '--input')
+    parser.add_argument('-o', '--output')
+    return parser
 
 def ReadFile(*paths):
     '''
