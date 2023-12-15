@@ -1,3 +1,7 @@
+import warnings
+warnings.warn("This module is deprecated. You want to use defaultdict instead.", DeprecationWarning,
+              stacklevel=2)
+
 class Aggregator:
     def __init__(self) -> None:
         pass
